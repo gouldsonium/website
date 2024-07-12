@@ -1,20 +1,15 @@
-# Nuxt 3 + Storyblok Starter Template
+# Gouldsonium Website
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more about Nuxt.js
 Look at the [Storyblok documentation](https://www.storyblok.com/tc/nuxtjs) to learn more about Nuxt with Storyblok
-
-## Note
-
-This template is a prototype for an upcoming project called NuxtStory. This will allow users to quickly create a highly customisable website that can be improved upon by the developer if they so wish.
 
 ## Setup
 
 ### Prerequisites
 
 - A Storyblok Account
-- An empty space with no content or bloks. Page blok needs to be renamed to old_page
-- An active storyblok user access token
-- A Storyblok access token
+- Access to the Gouldsonium space
+- Space access token
 
 NOTE: To fully utilise this site on a live environment, you will need to connect storyblok to a webhook which will deploy your site everytime you publish something. I would recommend Netlify.
 
