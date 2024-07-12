@@ -7,11 +7,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        heading: [process.env.HEADING_FONT_FAMILY, 'serif'],
-        text: [process.env.TEXT_FONT_FAMILY, 'sans-serif'],
+        heading: ["JetBrains Mono", 'monospace'],
+        text: ["Open Sans", 'sans-serif'],
       },
       colors: {
-        secondary: process.env.SECONDARY_COLOR
+        secondary: '#ffa500'
       },
       screens: {
         xs: '495px'

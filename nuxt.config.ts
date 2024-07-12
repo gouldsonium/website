@@ -7,8 +7,8 @@ export default defineNuxtConfig({
     }
   },
   site: {
-    url: process.env.WEBSITE_URL,
-    name: process.env.WEBSITE_NAME
+    url: "https://gouldsonium.com",
+    name: "Gouldsonium"
   },
   modules: [
     '@nuxtjs/tailwindcss',
@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     ['nuxt-gtag', {
       id: process.env.GTAG_ID,
       config: {
-        page_title: process.env.WEBSITE_NAME
+        page_title: "Gouldsonium"
       }
     }] : null,
     !!process.env.FACEBOOK_PIXEL_ID ?
@@ -55,7 +55,7 @@ export default defineNuxtConfig({
       link: [
         { rel: "preconnect", href: "https://fonts.googleapis.com" },
         { rel: "preconnect", href: "https://fonts.gstatic.com" },
-        { rel: "stylesheet", href: process.env.FONT_URL },
+        { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Open+Sans:wght@300&display=swap" },
         { rel: "stylesheet", href: 'https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css'}
       ],
       meta: [

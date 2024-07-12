@@ -55,7 +55,7 @@ const generateContent = async () => {
           slug: page.slug,
           content: {
             component: "page",
-            meta_title: process.env.WEBSITE_NAME + ' - ' + page.name,
+            meta_title: 'Gouldsonium - ' + page.name,
             meta_description: page.meta_description,
             priority: page.priority,
             sitemap_ignore: page.sitemap_ignore,
@@ -92,7 +92,7 @@ const generateContent = async () => {
         is_startpage: true,
         content: {
           component: "page",
-          meta_title: process.env.WEBSITE_NAME + ' - Blog',
+          meta_title: 'Gouldsonium - Blog',
           meta_description: 'Welcome to our blog',
           body: [
             {
