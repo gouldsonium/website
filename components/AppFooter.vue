@@ -25,8 +25,7 @@
 
 <template>
   <footer 
-    class="bg-black shadow p-4 text-white" 
-    :style="{backgroundColor: footer_color || null, color: footer_text_color || null}"
+    class="bg-primary shadow p-4 text-white"
   >
     <div class="w-full container mx-auto p-4 md:py-8">
       <div class="grid grid-cols-2 sm:grid-cols-3 gap-10">
@@ -55,13 +54,10 @@
       <div class="flex flex-col sm:flex-row text-sm w-full justify-between">
         <div class="flex">
           <span class="border-r-2 pr-2">
-            © {{ copyright }} {{currentYear}} 
+            © Gouldsonium {{currentYear}} 
           </span>
           <span class="border-r-2 px-2">All Rights Reserved</span>
           <NuxtLink to="/privacy-policy" class="pl-2 cursor-pointer hover:underline">Privacy Policy</NuxtLink>
-        </div>
-        <div class="justify-self-end py-3 sm:py-0">
-          Website by <a class="underline hover:opacity-50" href="https://storyblok.gouldsonium.com" target="_blank">Gouldsonium</a> 
         </div>
       </div>
     </div>

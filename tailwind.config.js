@@ -11,6 +11,7 @@ module.exports = {
         text: ["Open Sans", 'sans-serif'],
       },
       colors: {
+        primary: '#222831',
         secondary: '#ffa500'
       },
       screens: {

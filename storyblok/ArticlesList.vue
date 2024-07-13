@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <section class="py-16 px-3 bg-gray-100 dark:bg-gray-800" :style="{ backgroundColor: blok.background_color?.color }">
+  <section class="py-16 px-3 bg-gray-100 dark:bg-primary" :style="{ backgroundColor: blok.background_color?.color }">
     <div :id="blok?.section_id" style="position: relative; visibility: hidden;" class="md:top-[-100px]"></div>
     <div class="container mx-auto">
       <h2 v-if="!!blok?.headline"

@@ -4,7 +4,7 @@
     itemscope 
     itemtype="http://schema.org/Article" 
     :style="{ backgroundColor: blok.background_color?.color }"
-    class="bg-gray-100 dark:bg-gray-800"
+    class="bg-gray-100 dark:bg-primary"
   >
     <NuxtImg
       v-if="blok.image?.filename" placeholder

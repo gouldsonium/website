@@ -35,7 +35,7 @@ const backgroundStyle = computed(() => {
 </script>
 
 <template>
-  <section v-editable="blok" :style="backgroundStyle" :class="{ 'py-16': !!blok?.padding }" class="bg-gray-100 dark:bg-gray-800 overflow-x-hidden">
+  <section v-editable="blok" :style="backgroundStyle" :class="{ 'py-16': !!blok?.padding }" class="bg-gray-50 dark:bg-primary overflow-x-hidden">
     <div :id="blok?.section_id" style="position: relative; visibility: hidden;" class="md:top-[-100px]"></div>
     <div :class="blok?.layout">
       <div :data-aos="blok?.animate" data-aos-delay="500" data-aos-once="true">

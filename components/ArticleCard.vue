@@ -11,7 +11,7 @@
       placeholder provider="storyblok"
       class="w-full h-48 xl:h-72 object-cover pointer-events-none"
     />
-    <div class="p-4 border h-full border-secondary border-t-0 bg-white dark:bg-gray-900">
+    <div class="p-4 border h-full border-secondary border-t-0 bg-white dark:bg-grey-900">
       <h3 class="text-gray-900 font-bold mb-3 font-heading dark:text-white">
         {{ article.title }}
       </h3>
