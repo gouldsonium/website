@@ -14,11 +14,17 @@
         <span class="fancy text-5xl xs:text-6xl sm:text-7xl">software</span>     
       </h2> -->
     </div>
+    <Arrow />
   </div>
 </template>
 
 <script>
+import Arrow from '../components/TheHomeArrow.vue';
+
 export default {
+  components: {
+    Arrow
+  },
   methods: {
     handleMove(e){
       const left = document.getElementById("left-side");
