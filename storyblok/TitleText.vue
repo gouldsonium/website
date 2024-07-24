@@ -6,7 +6,6 @@ const sectionClass = computed(() => {
   return [
     props.blok?.width,
     props.blok?.position,
-    'px-5'
   ]
 });
 </script>

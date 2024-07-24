@@ -26,7 +26,7 @@
           <h1 class="mb-3 z-30 font-heading text-gray-800 dark:text-gray-100" :style="{color: blok.title_color?.color}">
             {{ blok?.title || 'Page Title' }}
           </h1>
-          <p v-if="!!blok?.text"class="font-light z-30 text-gray-800 dark:text-gray-100" :style="{color: blok.text_color?.color}">
+          <p v-if="!!blok?.text"class="font-light z-30 text-gray-800 dark:text-gray-100 text-xl" :style="{color: blok.text_color?.color}">
             {{ blok?.text }}
           </p>
           <div class="mt-10 flex flex-wrap z-30" v-if="blok?.buttons">

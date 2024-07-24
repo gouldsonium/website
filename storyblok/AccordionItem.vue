@@ -1,7 +1,7 @@
 <template>
   <div v-editable="blok" class="border-t-2 border-secondary" :style="{borderColor: blok?.border_color.color || '#000000'}">
     <button @click="toggleAccordion" :aria-expanded="isOpen" :aria-controls="`collapse${blok._uid}`">
-      <h4 class="text-left hover:text-secondary duration-300 py-5 font-heading" :style="{color:blok?.title_color.color}">
+      <h4 class="text-left hover:opacity-75 duration-300 py-5 font-heading" :style="{color:blok?.title_color.color}">
         {{ blok?.title }}
       </h4>
       <svg fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 10" aria-hidden="true"
@@ -11,7 +11,7 @@
     </button>
     <Transition name="fade">
       <article v-if="isOpen" :id="`collapse${blok._uid}`">
-        <p :style="{color:blok?.text_color.color}" class="pb-4">{{ blok?.content }}</p>
+        <p :style="{color:blok?.text_color.color}" class="pb-4 max-w-4xl text-base md:text-xl">{{ blok?.content }}</p>
         <div class="w-fit">
           <AppLink 
             v-if="!!blok?.url" 

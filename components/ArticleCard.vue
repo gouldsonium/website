@@ -2,7 +2,7 @@
   <NuxtLink
     :to="'/' + slug"
     v-editable="article"
-    class="overflow-hidden w-full h-full rounded-[25px] text-center overflow-hidden border-b-secondary border-b-4"
+    class="overflow-hidden w-full h-full rounded-[25px] text-center overflow-hidden border-b-secondary border-b-4 shadow-xl"
   >
     <NuxtImg
       v-if="!!article?.image"
@@ -11,8 +11,8 @@
       placeholder provider="storyblok"
       class="w-full h-48 xl:h-72 object-cover pointer-events-none"
     />
-    <div class="p-4 border h-full border-secondary border-t-0 bg-white dark:bg-grey-900">
-      <h3 class="text-gray-900 font-bold mb-3 font-heading dark:text-white">
+    <div class="p-4 h-full border-secondary border-t-0 bg-white dark:bg-primary">
+      <h3 class="text-secondary font-bold mb-3 font-heading">
         {{ article.title }}
       </h3>
       <h5 class="my-3 text-gray-800 dark:text-gray-100">
