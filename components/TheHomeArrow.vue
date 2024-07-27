@@ -3,11 +3,12 @@
 </template>
 
 <style scoped>
+/* CSS remains the same */
 .arrow {
   position: absolute;
   bottom: 17%;
   left: 50%;
-  z-index: 1000;
+  z-index: 10;
 }
 .arrow:before,
 .arrow:after {
@@ -72,8 +73,8 @@ export default {
   methods: {
     handleScroll() {
       const arrow = this.$refs.scrollArrow;
-      if (window.scrollY > 0) {
-        arrow.style.display = 'none';
+      if (arrow) {
+        arrow.style.display = window.scrollY > 0 ? 'none' : '';
       }
     }
   }
