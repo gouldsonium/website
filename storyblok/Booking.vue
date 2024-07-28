@@ -118,7 +118,7 @@ const computedStyle = computed(() => {
         <div class="mt-10 w-full">
           <button 
             type="submit" 
-            class="w-full btn py-2 border-none hover:opacity-75 bg-secondary" 
+            class="w-full btn py-2 border-none hover:opacity-75 bg-secondary font-semibold" 
             :style="{backgroundColor: blok?.btn_color?.color, color:blok?.btn_text_color?.color, borderRadius: blok.style}"
           >
             Get in touch
